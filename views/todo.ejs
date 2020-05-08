@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/todo-list.js"></script>
+  </head>
+  <body>
+    <img src="logo.png" class="image" alt="">
+    <h1>Welcome to our Todo List</h1>
+    <h1 class="day">Today is <%= day %></h1>
+    <div id="todo-table">
+      <form>
+        <input type="text" name="item" placeholder="Add new item.." required autocomplete="off">
+        <button type="submit" class="button">Add item</button>
+      </form>
+      <ul>
+        <% for(var i=0; i< todos.length; i++){ %>
+          <li><%= todos[i].name %></li>
+
+        <% } %>
+      </ul>
+    </div>
+    <h3 style="font-size:15px;margin-top:20px;color:#1f4068;font-family:Lobster;text-align:center;">Created by Amine</h3>
+
+  </body>
+</html>

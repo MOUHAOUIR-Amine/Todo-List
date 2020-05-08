@@ -1,0 +1,20 @@
+{
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "this is an intro to nodeJs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Amine",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.2",
+    "express": "^4.17.1",
+    "loadash": "^1.0.0",
+    "mongoose": "^5.9.11",
+    "superheroes": "^3.0.0"
+  },
+  "devDependencies": {}
+}
