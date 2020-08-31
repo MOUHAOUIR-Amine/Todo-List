@@ -5,7 +5,7 @@ var urlencodedParser = bodyParser.urlencoded({
   extended: false
 });
 
-mongoose.connect("mongodb://localhost:27017/todolistDB",{useNewUrlParser:true ,useUnifiedTopology: true});
+mongoose.connect("mongodb+srv://admin-amine:amine1997@cluster0-mdmcw.mongodb.net/todolistDB",{useNewUrlParser:true ,useUnifiedTopology: true});
 const itemsSchema=new mongoose.Schema({
   name:{
     type:String,
